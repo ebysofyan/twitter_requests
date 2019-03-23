@@ -3,7 +3,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/twitter-requests.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An easy and simple python library that allow you to get twitter data trough twitter API.
+An easy and simple python library that allow you to get twitter data through twitter API.
 
 ## Installation
 For this installation, make sure you have already install `python-pip` on your machine <br/><br/>
