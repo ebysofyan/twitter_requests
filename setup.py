@@ -5,7 +5,7 @@ setup(
     packages=['twitter_requests'],
     version='0.1',
     license='MIT',
-    description='Simple python lib for acquire your twitter data',
+    description='Simple python lib to acquire your twitter data',
     author='ebysofyan',
     author_email='eby.sofyan@gmail.com',
     url='https://github.com/ebysofyan',

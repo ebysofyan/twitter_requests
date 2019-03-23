@@ -4,8 +4,8 @@ Just a simple sample
 import sys
 import time
 
-from .generator import TwitterBearerGenerator
-from .twitter import Twitter, TwitterQueryBuilder
+from twitter_requests.generator import TwitterBearerGenerator
+from twitter_requests.twitter import Twitter, TwitterQueryBuilder
 
 QUERY = sys.argv[1]
 EPOCH = 0
@@ -24,11 +24,11 @@ while True:
         TOKEN = TWITTER_BEARER_GEBERATOR.generate_token()
         QUERY_BUILDER = TwitterQueryBuilder.builder().set_count(10)\
             .set_lang('id').build()
-        TWITTER_SCRAPPER = Twitter(TOKEN, QUERY_BUILDER)
+        TWITTER = Twitter(TOKEN, QUERY_BUILDER)
 
     try:
-        TWITTER_SCRAPPER.find_tweets(QUERY)
-        for tweet in TWITTER_SCRAPPER.get_tweets_statuses():
+        TWITTER.find_tweets(QUERY)
+        for tweet in TWITTER.get_tweets_statuses():
             print(f"{tweet['user']['name']} ==> {tweet['text']} ")
         print(f"====================== END LINE OF EPOCH {EPOCH} ======================")
         time.sleep(60)
