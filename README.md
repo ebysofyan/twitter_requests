@@ -1,3 +1,4 @@
+# Moved into https://github.com/nahlalabs/twitter_requests
 # Simple python lib to acquire twitter data
 [![PyPI version](https://badge.fury.io/py/twitter-requests.svg)](https://badge.fury.io/py/twitter-requests)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/twitter-requests.svg)
